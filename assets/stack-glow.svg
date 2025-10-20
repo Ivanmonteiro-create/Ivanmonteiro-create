@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="120" viewBox="0 0 720 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .tag{font:600 14px system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;fill:#0b1220}
+    .chip{fill:#eafcf4;stroke:#18E273;stroke-width:2}
+    .g{filter:url(#glow)}
+  </style>
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(20,28)">
+    <g class="g" transform="translate(0,0)"><rect class="chip" rx="10" width="130" height="36"/><text class="tag" x="65" y="24" text-anchor="middle">ChatGPT</text></g>
+    <g class="g" transform="translate(150,0)"><rect class="chip" rx="10" width="160" height="36"/><text class="tag" x="80" y="24" text-anchor="middle">Next.js (App Router)</text></g>
+    <g class="g" transform="translate(330,0)"><rect class="chip" rx="10" width="120" height="36"/><text class="tag" x="60" y="24" text-anchor="middle">TypeScript</text></g>
+    <g class="g" transform="translate(470,0)"><rect class="chip" rx="10" width="110" height="36"/><text class="tag" x="55" y="24" text-anchor="middle">Vercel</text></g>
+    <g class="g" transform="translate(600,0)"><rect class="chip" rx="10" width="100" height="36"/><text class="tag" x="50" y="24" text-anchor="middle">Tailwind</text></g>
+  </g>
+
+  <!-- brilho pulsando levemente -->
+  <g opacity="0.8">
+    <rect x="18" y="26" width="684" height="40" fill="transparent">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
