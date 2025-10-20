@@ -3,12 +3,7 @@
 <p align="center">
 💡 Criador de Projetos Web com Inteligência Artificial <br/>
 🚀 Construo sites e aplicações reais usando <strong>ChatGPT + GitHub + Vercel</strong> <br/>
-🇧🇷 Brasil
-</p>
-
-<p align="center">
-  <!-- Frases animadas (typewriter) -->
-  <img src="./assets/hero-typewriter.svg" width="720" alt="Frases animadas sobre meu trabalho" />
+🇧🇷 🇵🇹
 </p>
 
 ---
@@ -35,8 +30,8 @@ Trabalho com **ChatGPT + GitHub + Vercel**, organizo tudo com mudanças **increm
 </td>
 <td width="42%" align="center">
 
-### 🤖 Meu Robô de IA (criador de sites)
-<img src="./assets/robot-builder.svg" width="95%" alt="Robô criador de sites" />
+<!-- Apenas o robô, sem título -->
+<img src="./assets/robot-builder.svg" width="95%" alt="Robô que simboliza IA construindo sites" />
 
 <br/><br/>
 
@@ -66,9 +61,4 @@ Transformar ideias em **sites funcionais e acessíveis**, usando IA e automaçã
 
 ### 📬 Contato
 📧 **E-mail:** popomonteiro@gmail.com
-🌐 **Portfólio:** [radarcrypto.space](https://radarcrypto.space)  
-🇧🇷 **Localização:** Brasil
-
-<p align="center">
-  <em>"Não é preciso saber programar para construir algo grande — basta saber usar a inteligência certa."</em>
-</p>
+🌐 **Portfólio:** https://github.com/ivanmonteiro-create
