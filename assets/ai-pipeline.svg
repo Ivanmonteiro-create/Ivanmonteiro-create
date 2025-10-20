@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="720" height="170" viewBox="0 0 720 170" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .b{fill:#0b1220;font:600 16px system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    .n{fill:#18E273}
+    .box{fill:#ffffff;stroke:#0b1220;stroke-width:2}
+  </style>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <!-- caixas -->
+  <g transform="translate(20,30)">
+    <g><rect class="box" width="120" height="60" rx="10"/><text class="b" x="60" y="38" text-anchor="middle">Ideia</text></g>
+    <g transform="translate(150,0)"><rect class="box" width="140" height="60" rx="10"/><text class="b" x="70" y="38" text-anchor="middle">Prompt ChatGPT</text></g>
+    <g transform="translate(320,0)"><rect class="box" width="120" height="60" rx="10"/><text class="b" x="60" y="38" text-anchor="middle">Projeto</text></g>
+    <g transform="translate(460,0)"><rect class="box" width="100" height="60" rx="10"/><text class="b" x="50" y="38" text-anchor="middle">Deploy</text></g>
+    <g transform="translate(580,0)"><rect class="box" width="100" height="60" rx="10"/><text class="b" x="50" y="38" text-anchor="middle">Link</text></g>
+  </g>
+  <!-- setas e bolinha animada -->
+  <g transform="translate(20,90)" stroke="#18E273" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="120" y1="0" x2="150" y2="0"/>
+    <line x1="290" y1="0" x2="320" y2="0"/>
+    <line x1="440" y1="0" x2="460" y2="0"/>
+    <line x1="560" y1="0" x2="580" y2="0"/>
+    <circle r="5" fill="#18E273">
+      <animate attributeName="cx" values="120;150;290;320;440;460;560;580" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="360" y="150" text-anchor="middle" class="b n">Tudo versionado no GitHub • Rollback fácil • Commits claros (feat/fix/docs)</text>
+</svg>
