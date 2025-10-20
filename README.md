@@ -6,16 +6,47 @@
 🇧🇷 Brasil
 </p>
 
+<p align="center">
+  <!-- Frases animadas (typewriter) -->
+  <img src="./assets/hero-typewriter.svg" width="720" alt="Frases animadas sobre meu trabalho" />
+</p>
+
 ---
 
-### 🧠 Sobre mim
-Sou um criador digital que usa Inteligência Artificial para desenvolver sites, aplicações e sistemas completos.  
-Acredito que a IA torna a tecnologia mais acessível e acelera a entrega de soluções úteis.
+<table>
+<tr>
+<td width="58%">
 
-📌 **Atuação principal**
-- Criação e gestão de sites com **Next.js + Vercel**
-- Estrutura e automação de projetos com apoio do **ChatGPT**
-- Sistemas nas áreas de **Finanças**, **Cripto** e **E-commerce**
+### 🧠 Sobre mim
+Sou um criador digital que usa **Inteligência Artificial** para transformar ideias em sites reais.  
+Trabalho com **ChatGPT + GitHub + Vercel**, organizo tudo com mudanças **incrementais e seguras**, e foco em **clareza, rapidez e utilidade**.
+
+**Atuação principal**
+- Planejamento guiado por IA (conteúdo, UX e roadmap)
+- Next.js + Vercel com deploy automático
+- Projetos em **Finanças**, **Cripto** e **E-commerce**
+
+### ⚙️ Como eu trabalho (pipeline IA)
+<img src="./assets/ai-pipeline.svg" width="100%" alt="Fluxo de trabalho: Ideia → ChatGPT → Projeto → Deploy" />
+
+### 🧩 Tecnologias
+<img src="./assets/stack-glow.svg" width="100%" alt="Stack com brilho" />
+
+</td>
+<td width="42%" align="center">
+
+### 🤖 Meu Robô de IA (criador de sites)
+<img src="./assets/robot-builder.svg" width="95%" alt="Robô criador de sites" />
+
+<br/><br/>
+
+<img alt="AI Robot status" src="https://img.shields.io/badge/AI%20Robot-online-success?logo=githubactions" />
+<img alt="Vercel" src="https://img.shields.io/badge/Vercel-deploy%20ativo-000000?logo=vercel" />
+<img alt="GitHub" src="https://img.shields.io/badge/GitHub-projetos%20públicos-24292e?logo=github" />
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -24,20 +55,20 @@ Acredito que a IA torna a tecnologia mais acessível e acelera a entrega de solu
 | 🌐 Projeto | Descrição | Link |
 |------------|-----------|------|
 | **RadarCrypto 2025** | Simulador de trading com 8 pares de cripto, gráfico TradingView e aprendizado sem risco. | [🔗 Acessar projeto](https://radarcrypto.space) |
-| **Gerenciamento Familiar** | Sistema de controle financeiro pessoal e familiar com entradas/saídas, status e visão mensal. | [🔗 Acessar projeto](https://gerenciamentofamiliar.site) |
-| **Metas para o Sucesso** | Plataforma de metas e motivação com acompanhamento de progresso. | _(em breve)_ |
-| **SanMon Shop** | Loja online de demonstração com catálogo, produto e carrinho. | _(em breve)_ |
+| **Gerenciamento Familiar** | Controle financeiro pessoal e familiar: entradas/saídas, status e visão mensal clara. | [🔗 Acessar projeto](https://gerenciamentofamiliar.site) |
+| **Metas para o Sucesso** | Metas e motivação com acompanhamento de progresso (IA assistida). | _(em breve)_ |
+| **SanMon Shop** | Loja demo com catálogo, produto e carrinho. | _(em breve)_ |
 
 ---
 
-### 🤖 Meu Robô de IA (sempre por perto)
+### 🎯 Objetivo Profissional
+Transformar ideias em **sites funcionais e acessíveis**, usando IA e automação para entregar rápido e com qualidade.
+
+### 📬 Contato
+📧 **E-mail:** popomonteiro@gmail.com
+🌐 **Portfólio:** [radarcrypto.space](https://radarcrypto.space)  
+🇧🇷 **Localização:** Brasil
+
 <p align="center">
-  <img alt="AI Robot status" src="https://img.shields.io/badge/AI%20Robot-online-success?logo=githubactions" />
+  <em>"Não é preciso saber programar para construir algo grande — basta saber usar a inteligência certa."</em>
 </p>
-
-Uso um fluxo simples guiado por IA para transformar ideias em projetos:
-
-```text
-[Ideia] → (Prompt no ChatGPT) → [Esqueleto do Projeto]
-       → Ajustes rápidos (layout/UX/cores)
-       → Deploy na Vercel → Link público compartilhável
