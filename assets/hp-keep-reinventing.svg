@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1080" height="120" viewBox="0 0 1080 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .txt{font:700 34px system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; letter-spacing: .5px}
+    .sub{font:500 16px system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial; opacity:.9}
+    .dark{fill:#0b1220}
+    .green{fill:#18E273}
+    .cursor{stroke:#18E273;stroke-width:3}
+    @media (prefers-color-scheme: dark){ .dark{fill:#e6f6ee} }
+  </style>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <g transform="translate(40,72)">
+    <text id="line" class="txt dark"></text>
+    <line id="caret" class="cursor" x1="0" y1="-22" x2="0" y2="8">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- animação de escrita da frase -->
+    <animate xlink:href="#line" attributeName="textContent"
+      dur="6s" repeatCount="indefinite"
+      values="Keep Reinventing;Keep Reinventing;Keep Reinventing"/>
+    <!-- pequeno slogan alternando abaixo -->
+    <text class="sub green" x="0" y="28">
+      Do prompt ao deploy — sempre evoluindo
+      <animate attributeName="opacity" values="0;1;0" dur="6s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- mover o cursor aproximadamente para o fim do texto -->
+    <animate xlink:href="#caret" attributeName="transform"
+      dur="6s" repeatCount="indefinite"
+      values="translate(0,0);translate(370,0);translate(0,0)"/>
+  </g>
+</svg>
