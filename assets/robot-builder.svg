@@ -1,73 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="720" height="720" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="g" cx="50%" cy="40%" r="70%">
-      <stop offset="0%" stop-color="#18E273" stop-opacity="0.35"/>
+    <radialGradient id="bg" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#18E273" stop-opacity="0.45"/>
       <stop offset="100%" stop-color="#18E273" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="metal" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9eef3"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#0b1220" flood-opacity="0.25"/>
+    </filter>
   </defs>
-  <rect width="100%" height="100%" fill="transparent"/>
-  <!-- brilho de fundo -->
-  <circle cx="180" cy="180" r="130" fill="url(#g)"/>
 
-  <!-- corpo do robô -->
-  <g id="bot" transform="translate(0,10)">
-    <rect x="110" y="90" rx="18" ry="18" width="140" height="120" fill="#ffffff" stroke="#0b1220" stroke-width="3"/>
-    <!-- olhos -->
-    <g id="eyes">
-      <circle cx="150" cy="135" r="8" fill="#0b1220"/>
-      <circle cx="210" cy="135" r="8" fill="#0b1220"/>
-      <rect id="blink" x="142" y="130" width="76" height="10" fill="#ffffff" opacity="0">
-        <animate attributeName="opacity" values="0;1;0" dur="3.5s" repeatCount="indefinite"/>
+  <rect width="100%" height="100%" fill="transparent"/>
+  <circle cx="180" cy="180" r="140" fill="url(#bg)"/>
+
+  <!-- Robô -->
+  <g id="bot" transform="translate(0,6)" filter="url(#shadow)">
+    <!-- cabeça -->
+    <rect x="108" y="70" width="144" height="92" rx="20" fill="url(#metal)" stroke="#0b1220" stroke-width="3"/>
+    <!-- olhos com brilho -->
+    <g>
+      <circle cx="148" cy="112" r="9" fill="#0b1220"/>
+      <circle cx="212" cy="112" r="9" fill="#0b1220"/>
+      <circle cx="148" cy="112" r="4" fill="#18E273">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="212" cy="112" r="4" fill="#18E273">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- piscada -->
+      <rect x="132" y="106" width="96" height="12" fill="#e9eef3" opacity="0">
+        <animate attributeName="opacity" values="0;1;0" dur="3.2s" repeatCount="indefinite"/>
       </rect>
     </g>
-    <!-- boca -->
-    <rect x="150" y="165" width="60" height="8" rx="4" fill="#18E273"/>
     <!-- antena -->
-    <line x1="180" y1="90" x2="180" y2="60" stroke="#0b1220" stroke-width="3"/>
-    <circle id="led" cx="180" cy="56" r="6" fill="#18E273">
-      <animate attributeName="opacity" values="1;0.4;1" dur="1.4s" repeatCount="indefinite"/>
+    <line x1="180" y1="70" x2="180" y2="48" stroke="#0b1220" stroke-width="3"/>
+    <circle cx="180" cy="44" r="7" fill="#18E273">
+      <animate attributeName="r" values="7;9;7" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.5;1" dur="1.2s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- braços -->
-    <rect x="86" y="120" width="24" height="60" rx="8" fill="#ffffff" stroke="#0b1220" stroke-width="3"/>
-    <rect x="226" y="120" width="24" height="60" rx="8" fill="#ffffff" stroke="#0b1220" stroke-width="3"/>
+    <!-- tronco com janela e engrenagens -->
+    <rect x="100" y="158" width="160" height="116" rx="18" fill="url(#metal)" stroke="#0b1220" stroke-width="3"/>
+    <rect x="120" y="174" width="120" height="52" rx="8" fill="#0f1626" stroke="#0b1220" stroke-width="2"/>
+    <!-- engrenagens -->
+    <g transform="translate(180,200)">
+      <g>
+        <circle r="20" fill="none" stroke="#18E273" stroke-width="3"/>
+        <g>
+          <rect x="-2" y="-20" width="4" height="8" fill="#18E273"/>
+          <rect x="-2" y="12" width="4" height="8" fill="#18E273"/>
+          <rect x="-20" y="-2" width="8" height="4" fill="#18E273"/>
+          <rect x="12" y="-2" width="8" height="4" fill="#18E273"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+      </g>
+      <g transform="translate(-34,14) scale(0.7)">
+        <circle r="20" fill="none" stroke="#6df2b0" stroke-width="3"/>
+        <g>
+          <rect x="-2" y="-20" width="4" height="8" fill="#6df2b0"/>
+          <rect x="-2" y="12" width="4" height="8" fill="#6df2b0"/>
+          <rect x="-20" y="-2" width="8" height="4" fill="#6df2b0"/>
+          <rect x="12" y="-2" width="8" height="4" fill="#6df2b0"/>
+        </g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="6s" repeatCount="indefinite"/>
+      </g>
+    </g>
 
-    <!-- laptop -->
-    <g transform="translate(126,200)">
-      <rect width="108" height="68" rx="8" fill="#0b1220"/>
-      <rect x="6" y="6" width="96" height="38" rx="4" fill="#0f1626"/>
-      <!-- telas/cards piscando -->
-      <rect x="10" y="10" width="28" height="14" rx="3" fill="#18E273">
-        <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+    <!-- braços -->
+    <g>
+      <rect x="78" y="178" width="24" height="64" rx="10" fill="url(#metal)" stroke="#0b1220" stroke-width="3"/>
+      <rect x="258" y="178" width="24" height="64" rx="10" fill="url(#metal)" stroke="#0b1220" stroke-width="3"/>
+    </g>
+
+    <!-- laptop 3D -->
+    <g transform="translate(126,224)">
+      <rect width="108" height="72" rx="10" fill="#0b1220"/>
+      <rect x="8" y="8" width="92" height="40" rx="6" fill="#0f1626" stroke="#18E273" stroke-width="1.5"/>
+      <!-- janelas / páginas -->
+      <rect x="12" y="12" width="26" height="14" rx="3" fill="#18E273">
+        <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/>
       </rect>
-      <rect x="44" y="10" width="28" height="14" rx="3" fill="#18E273">
-        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+      <rect x="44" y="12" width="26" height="14" rx="3" fill="#18E273">
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" begin="0.4s"/>
       </rect>
-      <rect x="78" y="10" width="14" height="14" rx="3" fill="#18E273">
-        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+      <rect x="76" y="12" width="12" height="14" rx="3" fill="#18E273">
+        <animate attributeName="opacity" values="0.5;1;0.5" dur="2.2s" repeatCount="indefinite" begin="0.8s"/>
       </rect>
-      <rect x="6" y="46" width="96" height="8" rx="3" fill="#18E273"/>
+      <rect x="8" y="52" width="92" height="10" rx="4" fill="#18E273"/>
     </g>
   </g>
 
-  <!-- ícones orbitando: globo, raio, check -->
-  <g transform="translate(180,180)">
+  <!-- órbita de ícones (deploy/velocidade/check) -->
+  <g transform="translate(180,182)">
+    <circle r="112" fill="none" stroke="#d6f8e8" stroke-dasharray="6 8"/>
     <g>
-      <circle r="95" fill="none" stroke="#e2f8ee" stroke-dasharray="6 6" stroke-width="1"/>
-      <g>
-        <circle r="8" fill="#18E273"/>
-        <animateTransform attributeName="transform" attributeType="XML" type="rotate"
-          from="0" to="360" dur="10s" repeatCount="indefinite"/>
-      </g>
-      <g>
-        <rect x="-6" y="-6" width="12" height="12" fill="#18E273"/>
-        <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="10s" repeatCount="indefinite"/>
-      </g>
-      <g>
-        <polygon points="0,-8 8,0 0,8 -8,0" fill="#18E273"/>
-        <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="10s" repeatCount="indefinite"/>
-      </g>
+      <circle r="8" fill="#18E273"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#18E273"/>
+      <animateTransform attributeName="transform" type="rotate" from="120" to="480" dur="10s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <rect x="-6" y="-6" width="12" height="12" fill="#18E273"/>
+      <animateTransform attributeName="transform" type="rotate" from="240" to="600" dur="10s" repeatCount="indefinite"/>
     </g>
   </g>
 </svg>
